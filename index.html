@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Трекер привычек</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h1 { color: #4CAF50; }
+        label { display: block; margin: 10px 0; }
+        button { background-color: #4CAF50; color: white; border: none; padding: 10px; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+        textarea { width: 100%; height: 50px; margin-top: 10px; }
+        .history-entry { border-bottom: 1px solid #ddd; padding: 10px 0; }
+    </style>
+</head>
+<body>
+    <h1>Трекер Привычек</h1>
+    <form id="habit-form">
+        <label for="date">Дата:</label>
+        <input type="date" id="date" required>
+
+        <label><input type="checkbox" id="not-drinking"> Не пил</label>
+        <label><input type="checkbox" id="not-smoking"> Не курил</label>
+
+        <textarea id="notes" placeholder="Примечания"></textarea>
+        <button type="submit">Сохранить</button>
+    </form>
+
+    <h2>История</h2>
+    <div id="history"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
